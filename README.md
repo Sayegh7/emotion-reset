@@ -39,4 +39,4 @@ The [MIT License](LICENSE)
 
 ## Credits
 
-This package is inspired by heavily inspired/stolen from [emotion-normalize](https://www.npmjs.com/package/emotion-normalize).
+This package is heavily inspired/stolen from [emotion-normalize](https://www.npmjs.com/package/emotion-normalize).
