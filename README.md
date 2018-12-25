@@ -15,22 +15,22 @@ npm install --save emotion-reset
 ```js
 // global.js - place in your app where global styles reside
 import emotionReset from 'emotion-reset';
-import {injectGlobal} from 'emotion';
+import {Global, css} from '@emotion/core';
 
-/* eslint-disable no-unused-expressions */
-injectGlobal`
-${emotionReset}
+render(
+  <Global styles={css`
+    ${emotionReset}
 
-// You can continue writing global styles, for instance
-*, *::after, *::before {
-  box-sizing: border-box;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
-...
-`;
-/* eslint-enable */
+    // You can continue writing global styles, for instance
+    *, *::after, *::before {
+      box-sizing: border-box;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+    }
+    ...
+  `} />
+);
 ```
 
 ## License
