@@ -1,4 +1,4 @@
-import {css} from 'emotion';
+import {css} from '@emotion/core';
 
 const reset = css`
 html, body, div, span, applet, object, iframe,
