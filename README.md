@@ -6,6 +6,8 @@ The original `reset.css` is pulled from [shannonmoeller/reset.css](https://githu
 
 ## Usage
 
+**_IMPORTANT! For emotion versions older than 10, use emotion-reset v1.0.4 and refer to this [README](https://github.com/Sayegh7/emotion-reset/blob/e228261a0bd7a3d7d06bfdf6457576b647ad2e6f/README.md) for usage instructions_**.
+
 ```sh
 npm install --save emotion-reset
 ```
