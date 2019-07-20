@@ -116,4 +116,3 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/node,windows,osx,linux
 dist
-package-lock.json

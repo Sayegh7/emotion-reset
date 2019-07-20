@@ -1,8 +1,9 @@
 {
   "name": "emotion-reset",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Reset file for emotion JSS library",
   "main": "dist/index.js",
+  "types": "types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/Sayegh7/emotion-reset"
@@ -21,9 +22,8 @@
   "scripts": {
     "prebuild": "./bin/build.js",
     "build": "babel -d dist src",
-    "update": "ncu -u reset.css",
-    "prepublish": "npm run update && npm run prebuild",
-    "postversion": "git push origin master --tags && npm publish"
+    "update": "./node_modules/npm-check-updates/bin/ncu -u reset.css",
+    "prepublish": "npm run update && npm run build"
   },
   "devDependencies": {
     "@emotion/core": "^10.0.5",
@@ -31,7 +31,7 @@
     "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-es2015-template-literals": "^6.22.0",
-    "npm-check-updates": "^2.14.0",
+    "npm-check-updates": "^2.15.0",
     "reset.css": "^2.0.2"
   },
   "peerDependencies": {
