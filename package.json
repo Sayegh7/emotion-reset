@@ -23,8 +23,7 @@
     "prebuild": "./bin/build.js",
     "build": "babel -d dist src",
     "update": "npx ncu -u reset.css",
-    "prepublish": "npm run update && npm run prebuild",
-    "postversion": "git push origin master --tags && npm publish"
+    "prepublish": "npm run update && npm run build"
   },
   "devDependencies": {
     "@emotion/core": "^10.0.5",
