@@ -20,6 +20,7 @@
   "author": "Ahmed El Sayegh <ahmedelsayegh7@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "preinstall": "npm install -g npx",
     "prebuild": "./bin/build.js",
     "build": "babel -d dist src",
     "update": "npx ncu -u reset.css",
