@@ -20,10 +20,9 @@
   "author": "Ahmed El Sayegh <ahmedelsayegh7@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "preinstall": "npm install -g npx",
     "prebuild": "./bin/build.js",
     "build": "babel -d dist src",
-    "update": "npx ncu -u reset.css",
+    "update": "./node_modules/npm-check-updates/bin/ncu -u reset.css",
     "prepublish": "npm run update && npm run build"
   },
   "devDependencies": {
@@ -32,7 +31,7 @@
     "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-es2015-template-literals": "^6.22.0",
-    "npm-check-updates": "^2.14.0",
+    "npm-check-updates": "^2.15.0",
     "reset.css": "^2.0.2"
   },
   "peerDependencies": {
