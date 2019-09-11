@@ -26,7 +26,8 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
       - run: echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
-      - run: npm login --registry=https://npm.pkg.github.com/Sayegh7
+      - run: npm publish
+      - run: echo '//npm.pkg.github.com/Sayegh7/:_authToken=${NPM_TOKEN}'>.npmrc
       - run: npm publish
 workflows:
   version: 2
