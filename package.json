@@ -1,12 +1,15 @@
 {
   "name": "emotion-reset",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Reset file for emotion JSS library",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/Sayegh7/emotion-reset"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Sayegh7"
   },
   "keywords": [
     "emotion",
