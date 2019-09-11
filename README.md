@@ -2,6 +2,7 @@
 [![npm version](https://badge.fury.io/js/emotion-reset.svg)](https://badge.fury.io/js/emotion-reset)
 ![npm](https://img.shields.io/npm/dt/emotion-reset.svg)
 ![npm](https://img.shields.io/npm/dm/emotion-reset.svg)
+[![CircleCI](https://circleci.com/gh/Sayegh7/emotion-reset.svg?style=svg)](https://circleci.com/gh/Sayegh7/emotion-reset)
 
 Reset file for [Emotion](https://github.com/emotion-js/emotion) CSS-in-JS library.
 
