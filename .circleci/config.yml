@@ -27,9 +27,8 @@ jobs:
             - v1-dependencies-
       # - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN"> ~/repo/.npmrc
       # - run: npm publish
-      - run: npm set registry https://npm.pkg.github.com/Sayegh7
-      - run: npm set name @sayegh7/emotion-reset
-      - run: echo "//npm.pkg.github.com/Sayegh7:_authToken=$GHUB_TOKEN"> ~/repo/.npmrc
+      - run: mv github-package.json package.json
+      - run: echo "//npm.pkg.github.com/sayegh7:_authToken=$GHUB_TOKEN"> ~/repo/.npmrc
       - run: npm publish
 workflows:
   version: 2
