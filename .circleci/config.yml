@@ -37,6 +37,7 @@ workflows:
       - deploy:
           requires:
             - install_deps
+            - hold
           filters:
             branches:
               only: master
