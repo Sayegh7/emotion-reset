@@ -15,13 +15,6 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-  hold:
-    type: approval
-    requires:
-      - install_deps
-    filters:
-      branches:
-        only: master
   deploy:
     docker:
       - image: circleci/node:10
@@ -41,6 +34,13 @@ workflows:
   deploy:
     jobs:
       - install_deps
+      - hold:
+        type: approval
+        requires:
+          - install_deps
+        filters:
+          branches:
+            only: master
       - deploy:
           requires:
             - hold
