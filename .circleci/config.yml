@@ -25,9 +25,9 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
-      - run: echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+      - run: echo '//registry.npmjs.org/:_authToken='$NPM_TOKEN''>.npmrc
       - run: npm publish
-      - run: echo '//npm.pkg.github.com/:_authToken=${GHUB_TOKEN}'>.npmrc
+      - run: echo '//npm.pkg.github.com/:_authToken='$GHUB_TOKEN''>.npmrc
       - run: npm publish
 workflows:
   version: 2
