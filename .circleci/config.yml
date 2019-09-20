@@ -34,9 +34,16 @@ workflows:
   deploy:
     jobs:
       - install_deps
-      - deploy:
+      - hold:
+          type: approval
           requires:
             - install_deps
+          filters:
+            branches:
+              only: master
+      - deploy:
+          requires:
+            - hold
           filters:
             branches:
               only: master
