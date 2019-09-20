@@ -8,9 +8,6 @@
     "type": "git",
     "url": "https://github.com/Sayegh7/emotion-reset"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/Sayegh7"
-  },
   "keywords": [
     "emotion",
     "reset",
