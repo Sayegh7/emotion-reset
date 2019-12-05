@@ -19,7 +19,6 @@ npm install --save emotion-reset
 ### JavaScript
 
 ```js
-// global.js - place in your app where global styles reside
 import emotionReset from 'emotion-reset';
 import {Global, css} from '@emotion/core';
 
@@ -27,14 +26,12 @@ render(
   <Global styles={css`
     ${emotionReset}
 
-    // You can continue writing global styles, for instance
     *, *::after, *::before {
       box-sizing: border-box;
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       font-smoothing: antialiased;
     }
-    ...
   `} />
 );
 ```
