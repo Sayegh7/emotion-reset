@@ -21,7 +21,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "cd testing && npm run dev",
-    "pretest": "cd testing && yarn install",
+    "pretest": "yarn build && cd testing && yarn install",
     "test": "node percy",
     "prebuild": "./bin/build.js",
     "build": "babel -d dist src",
