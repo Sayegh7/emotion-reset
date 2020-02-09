@@ -6,7 +6,7 @@
 
 Reset file for [Emotion](https://github.com/emotion-js/emotion) CSS-in-JS library.
 
-The original `reset.css` is pulled from [shannonmoeller/reset.css](https://github.com/shannonmoeller/reset-css), and parsed into emotion ready format.
+The original `reset.css` is pulled from [kossnocorp/reset.css](https://github.com/kossnocorp/reset.css), and parsed into emotion ready format.
 
 ## Usage
 
