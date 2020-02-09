@@ -43,7 +43,5 @@
   "peerDependencies": {
     "@emotion/core": ">=10"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.8.3"
-  }
+  "dependencies": {}
 }
