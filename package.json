@@ -20,6 +20,9 @@
   "author": "Ahmed El Sayegh <ahmedelsayegh7@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "cd testing && npm run dev",
+    "pretest": "cd testing && yarn install",
+    "test": "node percy",
     "prebuild": "./bin/build.js",
     "build": "babel -d dist src",
     "update": "./node_modules/npm-check-updates/bin/ncu -u reset.css",
@@ -30,8 +33,12 @@
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@emotion/core": "^10.0.5",
+    "@percy/script": "^1.0.3",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
     "npm-check-updates": "^4.0.1",
-    "reset.css": "^2.0.2"
+    "reset.css": "^2.0.2",
+    "shelljs": "^0.8.3"
   },
   "peerDependencies": {
     "@emotion/core": ">=10"

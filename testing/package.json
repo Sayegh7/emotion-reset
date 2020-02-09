@@ -1,0 +1,29 @@
+{
+  "version": "0.0.0",
+  "main": "index.tsx",
+  "scripts": {
+    "dev": "next",
+    "start": "next build && next start",
+    "deploy": "next build && next export",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "emotion-reset": "file:..",
+    "next": "^9.2.0",
+    "next-offline": "^4.0.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "jest": "^24.9.0",
+    "typescript": "^3.7.4"
+  }
+}

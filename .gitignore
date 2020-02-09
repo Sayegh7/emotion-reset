@@ -116,3 +116,8 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/node,windows,osx,linux
 dist
+
+.env
+
+node_modules
+.next
