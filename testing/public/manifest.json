@@ -1,0 +1,15 @@
+{
+  "short_name": "PWA",
+  "name": "emotion-reset-test",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512 192x192 144x144 64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000",
+  "background_color": "#fff"
+}

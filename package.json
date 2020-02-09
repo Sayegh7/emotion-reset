@@ -1,6 +1,6 @@
 {
   "name": "emotion-reset",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Reset file for emotion JSS library",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -20,21 +20,30 @@
   "author": "Ahmed El Sayegh <ahmedelsayegh7@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "cd testing && npm run dev",
+    "pretest": "yarn build && cd testing && yarn install",
+    "test": "node percy",
     "prebuild": "./bin/build.js",
     "build": "babel -d dist src",
     "update": "./node_modules/npm-check-updates/bin/ncu -u reset.css",
     "prepublish": "npm run update && npm run build"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
     "@emotion/core": "^10.0.5",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-plugin-transform-es2015-template-literals": "^6.22.0",
-    "npm-check-updates": "^2.15.0",
-    "reset.css": "^2.0.2"
+    "@percy/script": "^1.0.3",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "npm-check-updates": "^4.0.1",
+    "reset.css": "^2.0.2",
+    "shelljs": "^0.8.3"
   },
   "peerDependencies": {
     "@emotion/core": ">=10"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3"
   }
 }
