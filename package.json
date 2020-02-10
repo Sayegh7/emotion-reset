@@ -1,6 +1,6 @@
 {
   "name": "emotion-reset",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Reset file for emotion JSS library",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
