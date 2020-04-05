@@ -761,14 +761,6 @@
     "@babel/helper-create-regexp-features-plugin" "^7.8.3"
     "@babel/helper-plugin-utils" "^7.8.3"
 
-"@babel/polyfill@^7.8.3":
-  version "7.8.3"
-  resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.8.3.tgz#2333fc2144a542a7c07da39502ceeeb3abe4debd"
-  integrity sha512-0QEgn2zkCzqGIkSWWAEmvxD7e00Nm9asTtQvi7HdlYvMhjy/J38V/1Y9ode0zEJeIuxAI0uftiAzqc7nVeWUGg==
-  dependencies:
-    core-js "^2.6.5"
-    regenerator-runtime "^0.13.2"
-
 "@babel/preset-env@7.7.1":
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.7.1.tgz#04a2ff53552c5885cf1083e291c8dd5490f744bb"
@@ -1537,9 +1529,9 @@ acorn-walk@^6.0.1:
   integrity sha512-7evsyfH1cLOCdAzZAd43Cic04yKydNx0cF+7tiA19p1XnLLPU4dpCQOqpjqwokFe//vS0QqfqqjCS2JkiIs0cA==
 
 acorn@^5.5.3:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
-  integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
+  integrity sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
 
 acorn@^6.0.1, acorn@^6.2.1:
   version "6.4.0"
@@ -3088,9 +3080,7 @@ emojis-list@^2.0.0:
   integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
 
 "emotion-reset@file:..":
-  version "2.0.5"
-  dependencies:
-    "@babel/polyfill" "^7.8.3"
+  version "2.0.7"
 
 encodeurl@~1.0.2:
   version "1.0.2"
