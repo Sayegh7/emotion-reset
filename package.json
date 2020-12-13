@@ -1,6 +1,6 @@
 {
   "name": "emotion-reset",
-  "version": "2.0.7",
+  "version": "3.0.0",
   "description": "Reset file for emotion JSS library",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -41,6 +41,6 @@
     "shelljs": "^0.8.3"
   },
   "peerDependencies": {
-    "@emotion/core": ">=11"
+    "@emotion/react": ">=11"
   }
 }

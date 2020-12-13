@@ -2,7 +2,6 @@ name: CI
 
 on:
   pull_request:
-  push:
     branches:
       - dev
       - master
@@ -12,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1.1.0
       - name: Cache
         uses: actions/cache@v1.0.3
         with:
@@ -25,7 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1.1.0
       - name: Restore cache
         uses: actions/cache@v1.0.3
         with:
@@ -33,3 +30,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('yarn.lock') }}
       - name: Test
         run: PERCY_TOKEN=${{ secrets.PERCY_TOKEN }} yarn test
+  publish-test:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn install --frozen-lockfile
+      - run: npm publish --dry-run
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
