@@ -39,7 +39,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: npm publish
         env:
-          NPM_TOKEN: ${{secrets.npm_token}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 
   # publish-gpr:
   #   needs: test
