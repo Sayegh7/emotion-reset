@@ -30,3 +30,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('yarn.lock') }}
       - name: Test
         run: PERCY_TOKEN=${{ secrets.PERCY_TOKEN }} yarn test
+  publish-npm:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn install --frozen-lockfile
+      - run: npm publish --dry-run
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
