@@ -9,8 +9,7 @@
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.27",
-    "@emotion/styled": "^10.0.27",
+    "@emotion/react": "^11.1.2",
     "emotion-reset": "file:..",
     "next": "^9.2.0",
     "next-offline": "^4.0.6",
