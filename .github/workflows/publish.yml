@@ -37,10 +37,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: yarn install --frozen-lockfile
-      - run: npm publish
-        env:
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
-
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
   # publish-gpr:
   #   needs: test
   #   runs-on: ubuntu-latest
