@@ -7,9 +7,15 @@ Reset file for [Emotion](https://github.com/emotion-js/emotion) CSS-in-JS librar
 
 The original `reset.css` is pulled from [kossnocorp/reset.css](https://github.com/kossnocorp/reset.css), and parsed into emotion ready format.
 
-## Usage
+## Version Compatibility
 
-**_IMPORTANT! For emotion versions older than 10, use emotion-reset v1.0.4 and refer to this [README](https://github.com/Sayegh7/emotion-reset/blob/e228261a0bd7a3d7d06bfdf6457576b647ad2e6f/README.md) for usage instructions_**.
+| emotion-reset | emotion | @emotion/core | @emotion/react |
+|--------------:|--------------:|---------------:|---------------|
+|[1.0.4](https://github.com/Sayegh7/emotion-reset/blob/e228261a0bd7a3d7d06bfdf6457576b647ad2e6f/README.md) | <10 |  Not supported | Not supported |
+|[2.0.3](https://github.com/Sayegh7/emotion-reset/blob/4f426b5e4f11db9853cd0fb2a49574e4003b8c1e/README.md) | Not supported |  >=10 | Not supported |
+|[>=3.0.0](https://github.com/Sayegh7/emotion-reset/blob/dev/README.md) | Not supported | Not supported | >=11 |
+
+## Usage
 
 ```sh
 npm install --save emotion-reset
@@ -19,7 +25,7 @@ npm install --save emotion-reset
 
 ```js
 import emotionReset from 'emotion-reset';
-import {Global, css} from '@emotion/core';
+import { Global, css } from '@emotion/react';
 
 render(
   <Global styles={css`
