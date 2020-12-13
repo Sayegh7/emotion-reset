@@ -9,7 +9,7 @@ The original `reset.css` is pulled from [kossnocorp/reset.css](https://github.co
 
 ## Version Compatibility
 
-This table indicates the minimum versions of `emotion-reset` supporting each emotion version. 
+This table indicates the latest versions of `emotion-reset` supporting each emotion version. 
 
 | emotion-reset | emotion | @emotion/core | @emotion/react |
 |--------------:|--------------:|---------------:|---------------:|
