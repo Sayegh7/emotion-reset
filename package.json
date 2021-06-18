@@ -1,6 +1,6 @@
 {
   "name": "emotion-reset",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Reset file for emotion JSS library",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -34,7 +34,7 @@
     "@babel/preset-env": "^7.8.3",
     "@emotion/react": "^11.1.1",
     "@percy/script": "^1.0.3",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "npm-check-updates": "^4.0.1",
     "reset.css": "^2.0.2",
